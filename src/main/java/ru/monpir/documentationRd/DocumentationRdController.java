@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 import ru.monpir.documentationRd.dto.DocumentationRdDto;
 import ru.monpir.documentationRd.dto.DocumentationRdMapper;
 import ru.monpir.documentationRd.service.DocumentationRdService;
-import ru.monpir.object.dto.ObjectDto;
 
 @RestController
 @RequestMapping(path = "/documentation/rd")

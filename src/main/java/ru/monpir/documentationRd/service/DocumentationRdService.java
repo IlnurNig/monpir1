@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.monpir.documentationRd.model.DocumentationRd;
 import ru.monpir.documentationRd.repository.DocumentationRdRepository;
-import ru.monpir.object.model.ObjectPir;
 
 @Service
 public class DocumentationRdService {

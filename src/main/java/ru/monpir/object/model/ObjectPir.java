@@ -33,7 +33,7 @@ public class ObjectPir {
     private Set<DocumentationRd> documentationRds;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="parent_object_id", foreignKey=@ForeignKey(name = "fk_parent_id"))
+    @JoinColumn(name = "parent_object_id", foreignKey = @ForeignKey(name = "fk_parent_id"))
     private ObjectPir parent;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

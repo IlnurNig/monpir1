@@ -29,7 +29,7 @@ public class ObjectController {
 
     @PatchMapping("/{objectId}")
     public ObjectDto updateObject(@RequestBody ObjectDto objectDto,
-                                   @PathVariable("objectId") long objectId) {
+                                  @PathVariable("objectId") long objectId) {
         log.info("PATCH /objects/{}", objectId);
         objectDto.setId(objectId);
         return objectMapper.toDto(objectService.updateObject(objectMapper.fromDto(objectDto)));
